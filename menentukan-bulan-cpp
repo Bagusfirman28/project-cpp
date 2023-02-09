@@ -1,0 +1,61 @@
+#include <iostream>
+#include <conio.h>
+#include <dos.h>
+
+using namespace std;
+
+int main (){
+	
+	//variable
+	int b;
+	string bln;
+	
+	//input
+		cout << " Masukan Bulan Dalam Bentuk Angka (1-12)= ";
+		cin >> b;
+		system  ("cls");
+	//proses pemilihan
+		switch (b){
+			
+			case 1:
+				bln = "Januari";
+				break;
+			case 2:
+				bln = "Februari";
+				break;
+			case 3:
+				bln = "Maret";
+				break;
+			case 4:
+				bln = "April";
+				break;
+			case 5:
+				bln = "Mei";
+				break;
+			case 6:
+				bln = "Juni";
+				break;
+			case 7:
+				bln = "Juli";
+				break;
+			case 8:
+				bln = "Agustus";
+				break;
+			case 9:
+				bln = "September";
+				break;
+			case 10:
+				bln = "Oktober";
+				break;
+			case 11:
+				bln = "November";
+				break;
+			case 12:
+				bln = "Desember";
+				break;
+			default:
+				cout << "TIDAK ADA  !";
+		}
+		//output
+			cout << " Bulan ke - " << b << " adalah " << bln; 
+}
